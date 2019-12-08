@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.control.ComboBox?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.DodajOcjenuController">
+   <top>
+      <Label text="Ocijenite film:" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Naziv filma:" />
+            <Label text="Napomena" GridPane.rowIndex="1" />
+            <Label text="Ocjena" GridPane.rowIndex="2" />
+            
+            <ComboBox fx:id="filmComboBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <TextField id="napomenaTextField" fx:id="napomenaTextField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+            <ComboBox fx:id="ocjenaComboBox" id="ocjenaComboBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+	            <!-- <items>
+				      <FXCollections fx:factory="observableArrayList">
+					      <String fx:value="1" />
+					      <String fx:value="2" />
+					      <String fx:value="3" />
+					      <String fx:value="4" />
+					      <String fx:value="5" />
+	       			  </FXCollections>
+	     		</items>
+     		</Combobox> -->
+         </children>
+      </GridPane>
+   </center>
+   <bottom>
+      <Button fx:id="spremiButton" mnemonicParsing="false" onAction="#spremi" text="Spremi" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
+

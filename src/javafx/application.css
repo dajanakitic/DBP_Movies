@@ -1,0 +1,54 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+MenuBar {
+	-fx-background-color:lightslategrey;	
+	-fx-padding: 5px;	
+	-fx-color:white;
+	-fx-border-insets: 10px;	
+}
+
+.menu {
+	-fx-color:white;
+}
+
+.menu:hover {
+    -fx-background-color: #bc784e;
+}
+
+TextField {
+	-fx-max-width:200px;
+	-fx-border-color:lightslategrey;
+	-fx-border-width: 1px;
+	-fx-padding:3px;
+	-fx-background-insets: 10px;
+	-fx-border-insets: 10px;
+	-fx-font-size:12px;
+}
+
+ComboBox {
+	-fx-max-width:200px;
+	-fx-padding:3px;
+	-fx-background-insets: 10px;
+	-fx-border-insets: 10px;
+	-fx-font-size:12px;
+	-fx-min-height:50px;
+	-fx-background-color:lightgrey;
+}
+
+Button {
+	-fx-padding: 5px;
+	-fx-font-size:12px;
+	-fx-color:white;
+	-fx-background-color:#bc784e;
+	-fx-text-fill:white;
+ }
+
+Label {
+	-fx-font-size:12px;
+	-fx-background-insets: 10px;
+	-fx-border-insets: 10px;
+}
+
+TableView {
+	-fx-border-color:lightslategrey;
+}

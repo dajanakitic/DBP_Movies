@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.FilmoviController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+         <Label alignment="CENTER" text="Pretraga filmova" />
+            <FlowPane alignment="CENTER" prefHeight="200.0" prefWidth="342.0">
+               <children>
+                  <Label text="Naziv:" />
+                  <TextField fx:id="filmoviFilterTextField" />
+                  <Button mnemonicParsing="false" onAction="#popuni" text="Pretraži" />
+               </children>
+            </FlowPane>
+            <TableView fx:id="filmoviTableView" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="idColumn" prefWidth="50.0" text="Id" />
+                <TableColumn fx:id="nazivColumn" prefWidth="100.0" text="Naziv" />
+                <TableColumn fx:id="zanrColumn" prefWidth="75.0" text="Žanr" />
+                <TableColumn fx:id="godinaColumn" prefWidth="75.0" text="Godina" />
+                <TableColumn fx:id="ocjenaColumn" prefWidth="120.0" text="Prosječna ocjena" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
+

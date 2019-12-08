@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="javafx.NaslovnicaController">
+	<top>
+      <MenuBar style="-fx-cursor: hand;" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Filmovi">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#prikaziFilmove" text="Prikaži filmove" />
+              <MenuItem mnemonicParsing="false" onAction="#dodajFilm" text="Dodaj film" />             
+            </items>
+          </Menu>
+        </menus>
+        <menus>
+          <Menu mnemonicParsing="false" text="Osobe">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#prikaziOsobe" text="Prikaži osobe" />
+              <MenuItem mnemonicParsing="false" onAction="#dodajOsobu" text="Dodaj osobu" />
+              <MenuItem mnemonicParsing="false" onAction="#dodajOsobaVsFilm" text="Poveži osobu s filmom" />
+            </items>
+          </Menu>
+        </menus>
+        <menus>
+          <Menu mnemonicParsing="false" text="Ocjene filmova">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#prikaziOcjene" text="Prikaži ocjene filma" />
+              <MenuItem mnemonicParsing="false" onAction="#dodajOcjenu" text="Dodaj ocjenu" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

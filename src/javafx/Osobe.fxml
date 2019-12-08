@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.OsobeController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+         <Label alignment="CENTER" text="Pretraga osoba" />
+            <FlowPane alignment="CENTER" prefHeight="200.0" prefWidth="342.0">
+               <children>
+                  <Label text="Ime ili prezime:" />
+                  <TextField fx:id="osobeFilterTextField" />
+                  <Button mnemonicParsing="false" onAction="#popuni" text="Pretraži" />
+               </children>
+            </FlowPane>
+            <TableView fx:id="osobeTableView" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="idColumn" prefWidth="50.0" text="Id" />
+                <TableColumn fx:id="imePrezimeColumn" prefWidth="150.0" text="Ime i prezime" />
+                <TableColumn fx:id="nazivFilmaColumn" prefWidth="100.0" text="Film" />
+                <TableColumn fx:id="ulogaColumn" prefWidth="100.0" text="Uloga na filmu" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
+
